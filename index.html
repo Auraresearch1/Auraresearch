@@ -25,7 +25,7 @@ h1{font-size:clamp(42px,6.2vw,72px);line-height:1.02;letter-spacing:-.015em}
 .btn{display:inline-block;font-family:var(--sans);font-size:16px;font-weight:500;text-decoration:none;padding:18px 32px;border-radius:3px;background:var(--navy);color:#F4F1EC}
 .btn:hover{background:var(--deep)}
 .art{border-radius:6px;overflow:hidden;aspect-ratio:1/1;box-shadow:0 30px 60px -30px rgba(15,26,61,.55)}
-.art svg{display:block;width:100%;height:100%}
+.art img{display:block;width:100%;height:100%;object-fit:cover}
 .seal{transform-origin:330px 78px;animation:spin 40s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.seal{animation:none}}
@@ -76,58 +76,7 @@ footer .wrap{padding-top:28px;padding-bottom:28px;display:flex;justify-content:s
    <a class="btn" href="https://www.auralabpeptides.co.uk/pages/research-peptides-uk">View the research catalogue</a>
   </div>
   <div class="art">
-<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aura Lab research vial with its packaging and certificate of analysis">
- <defs>
-  <radialGradient id="bgGlow" cx="45%" cy="40%" r="70%"><stop offset="0" stop-color="#2B3F7E"/><stop offset=".6" stop-color="#1B2A5C"/><stop offset="1" stop-color="#0F1A3D"/></radialGradient>
-  <linearGradient id="boxFront" x1="0" x2="1"><stop offset="0" stop-color="#F7F4EF"/><stop offset="1" stop-color="#E9E3DA"/></linearGradient>
-  <linearGradient id="boxSide" x1="0" x2="1"><stop offset="0" stop-color="#CFC6B9"/><stop offset="1" stop-color="#BDB3A5"/></linearGradient>
-  <linearGradient id="glass" x1="0" x2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset=".25" stop-color="#FFFFFF" stop-opacity=".18"/><stop offset=".75" stop-color="#FFFFFF" stop-opacity=".1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".45"/></linearGradient>
-  <linearGradient id="crimp" x1="0" x2="1"><stop offset="0" stop-color="#8A93A8"/><stop offset=".35" stop-color="#E4E8F0"/><stop offset=".6" stop-color="#AEB5C4"/><stop offset="1" stop-color="#6F788C"/></linearGradient>
-  <linearGradient id="cap" x1="0" x2="1"><stop offset="0" stop-color="#22346E"/><stop offset=".4" stop-color="#3A5199"/><stop offset="1" stop-color="#16244F"/></linearGradient>
-  <path id="sealPath" d="M330 78 m-38 0 a38 38 0 1 1 76 0 a38 38 0 1 1 -76 0"/>
- </defs>
- <rect width="400" height="400" fill="url(#bgGlow)"/>
- <g opacity=".08" stroke="#F4F1EC" fill="none"><path d="M40 60l18-10 18 10v20l-18 10-18-10z"/><path d="M58 90v18"/><circle cx="58" cy="112" r="4"/></g>
- <ellipse cx="205" cy="330" rx="150" ry="14" fill="#000" opacity=".28"/>
- <!-- box -->
- <path d="M150 118l100-22 44 16-100 22z" fill="#FBF9F5"/>
- <path d="M194 134l100-22v196l-100 22z" fill="url(#boxSide)"/>
- <path d="M150 118l44 16v196l-44-16z" fill="url(#boxFront)"/>
- <path d="M194 134l100-22v196l-100 22z" fill="url(#boxFront)" opacity="0"/>
- <g transform="translate(240 176) skewY(-12.4)">
-  <text x="0" y="0" text-anchor="middle" font-family="Jost, Helvetica, Arial, sans-serif" font-size="17" letter-spacing="5" fill="#1B2A5C" font-weight="500">AURA</text>
-  <text x="0" y="20" text-anchor="middle" font-family="Jost, Helvetica, Arial, sans-serif" font-size="10" letter-spacing="6" fill="#6E655D">LAB</text>
-  <path d="M-34 36h68" stroke="#1B2A5C" stroke-width=".8"/>
-  <text x="0" y="52" text-anchor="middle" font-family="Jost, Helvetica, Arial, sans-serif" font-size="6.5" letter-spacing="1.5" fill="#6E655D">RESEARCH USE ONLY</text>
- </g>
- <!-- COA card -->
- <g transform="rotate(8 310 270)">
-  <rect x="268" y="206" width="86" height="110" rx="3" fill="#FFFFFF"/>
-  <text x="278" y="224" font-family="Jost, Helvetica, Arial, sans-serif" font-size="7" letter-spacing="1" fill="#1B2A5C" font-weight="600">CERTIFICATE</text>
-  <text x="278" y="233" font-family="Jost, Helvetica, Arial, sans-serif" font-size="7" letter-spacing="1" fill="#1B2A5C" font-weight="600">OF ANALYSIS</text>
-  <g stroke="#D6CEC3" stroke-width="2"><path d="M278 246h60M278 256h48M278 266h56M278 276h40"/></g>
-  <path d="M278 294l20-12 12 6 18-16 14 8" fill="none" stroke="#1B2A5C" stroke-width="1.4"/>
- </g>
- <!-- vial -->
- <ellipse cx="128" cy="324" rx="40" ry="7" fill="#000" opacity=".3"/>
- <rect x="94" y="170" width="68" height="152" rx="12" fill="#DCE3F0" opacity=".22"/>
- <rect x="102" y="286" width="52" height="30" rx="6" fill="#F4F1EC" opacity=".92"/>
- <rect x="94" y="206" width="68" height="62" fill="#FFFFFF"/>
- <rect x="94" y="206" width="68" height="14" fill="#1B2A5C"/>
- <text x="128" y="216" text-anchor="middle" font-family="Jost, Helvetica, Arial, sans-serif" font-size="7" letter-spacing="2.5" fill="#F4F1EC">AURA LAB</text>
- <g stroke="#C9C0B3" stroke-width="2"><path d="M104 232h48M104 242h36M104 252h42"/></g>
- <rect x="94" y="170" width="68" height="152" rx="12" fill="url(#glass)"/>
- <rect x="100" y="178" width="6" height="136" rx="3" fill="#FFFFFF" opacity=".45"/>
- <rect x="104" y="150" width="48" height="24" rx="3" fill="url(#crimp)"/>
- <rect x="100" y="132" width="56" height="22" rx="5" fill="url(#cap)"/>
- <!-- seal -->
- <g class="seal">
-  <circle cx="330" cy="78" r="46" fill="#F4F1EC"/>
-  <circle cx="330" cy="78" r="40" fill="none" stroke="#1B2A5C" stroke-width=".8"/>
-  <text font-family="Jost, Helvetica, Arial, sans-serif" font-size="8" letter-spacing="2.4" fill="#1B2A5C"><textPath href="#sealPath">BATCH VERIFIED · LAB TESTED · UK ·</textPath></text>
- </g>
- <path d="M318 78l8 8 16-17" fill="none" stroke="#1B2A5C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<img src="hero.jpg" alt="Aura Research products">
 
   </div>
  </div>
